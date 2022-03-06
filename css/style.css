@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.wrapper .block-search {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .block-search h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.wrapper .block-search p {
+  font-size: 20px;
+}
+
+.wrapper .block-search input {
+  border: 0;
+  border-bottom: 2px solid #000;
+  outline: none;
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.wrapper .block-search button {
+  margin-top: 20px;
+  background-color: inherit;
+  outline: none;
+  padding: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.wrapper .block-search button:hover {
+  background-color: black;
+  color: white;
+}
+
+.wrapper .block-results {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 98%;
+  height: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+.wrapper .block-results h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.wrapper .block-results .button-reset {
+  border: 0;
+  border-bottom: 1px solid #000;
+  background-color: inherit;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.wrapper .block-results .button-reset:hover {
+  background-color: black;
+  color: white;
+}
+
+.wrapper .block-results .block-films {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .block-results .block-films .films-item {
+  margin-top: 20px;
+  width: 24%;
+}
+
+.wrapper .block-results .block-films .films-item .film-poster {
+  width: 100%;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.wrapper .block-results .block-films .films-item h5 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.wrapper .block-results .block-films .films-item p {
+  padding-left: 10%;
+  text-transform: uppercase;
+}

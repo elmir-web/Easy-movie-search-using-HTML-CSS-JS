@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="block-search">
+        <h4>Поиск фильмов</h4>
+        <p>
+          Введите название фильма в поле ниже, после чего нажмите кнопку поиска
+          и ждите, если заработает:)
+        </p>
+        <input
+          type="text"
+          placeholder="Введите название фильма"
+          id="search-input"
+        />
+        <!-- ПОЛЕ ДЛЯ ВВОДА НАЗВАНИЯ ФИЛЬМА -->
+        <button id="search-button">Поиск</button>
+        <!-- КНОПКА ПОИСКА ФИЛЬМОВ -->
+      </div>
+      <div class="block-results">
+        <h4>Результаты поиска</h4>
+        <button class="button-reset" id="button-reset">Назад</button>
+        <!-- КНОПКА НАЗАД -->
+        <div class="block-films">
+          <!-- В ЭТОТ БЛОК С ПОМОЩЬЮ JAVASCRIPT МЫ ВЫВОДИМ ВСЕ ФИЛЬМЫ -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
